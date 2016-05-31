@@ -1,6 +1,9 @@
 # Mac OSX
 .DS_Store
 
+# Structorizer Backup
+*.bak
+
 # Object files
 *.o
 
