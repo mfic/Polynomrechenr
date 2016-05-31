@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.24-11" text="&#34;grafik.c&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<repeat text="&#34;wahl = 1 ODER wahl = 2&#34;" comment="&#34;&#34;" color="ffffff">
+			<qRepeat>
+				<instruction text="&#34;A(B):&#34;&#34;Ausgabe des Plot:&#34;,&#34;1. Bildschirm&#34;,&#34;2. .ps-Datei&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<case text="&#34;wahl=&#34;,&#34;1&#34;,&#34;2&#34;,&#34;else&#34;" comment="&#34;&#34;" color="ffffff">
+					<qCase>
+						<call text="&#34;bildschirm.gnu&#34;" comment="&#34;&#34;" color="ffffff"></call>
+					</qCase>
+					<qCase>
+						<call text="&#34;datei.gnu&#34;" comment="&#34;&#34;" color="ffffff"></call>
+						<instruction text="&#34;A(B):&#34;&#34;Die Datei wurde unter grafik.ps gespeichert.&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;A(B):&#34;&#34;Fehler, bitte neue Eingabe!&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qCase>
+				</case>
+			</qRepeat>
+		</repeat>
+	</children>
+</root>
