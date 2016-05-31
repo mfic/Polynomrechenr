@@ -1,1 +1,1 @@
-java -jar Structorizer.app/Contents/Resources/Java/Structorizer.jar $1
+java -jar $(dirname "$0")/Structorizer.app/Contents/Java/Structorizer.jar "$@"
