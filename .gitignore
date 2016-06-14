@@ -7,3 +7,5 @@
 # Object files
 *.o
 
+# Programm
+polynomrechner
