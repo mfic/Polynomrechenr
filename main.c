@@ -8,7 +8,7 @@ void grafik(void);
 int main(void){
 
     /* Variablendeklaration */
-    float k[6] = {0, 0, 0, 0, 0, 0};
+    float k[6] = {0};
     int wahl = 0, i = 0;
     char buffer[100];
 
