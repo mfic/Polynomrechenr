@@ -1,9 +1,9 @@
 CC = gcc
 OBJ = main.o berechnung.o grafik.o
-FLAGS = -Wall
+FLAGS = -Wall -lm
 
 polynomrechner: $(OBJ)
-	$(CC) -o polynomrechner $(OBJ)
+	$(CC) -o polynomrechner $(FLAGS) $(OBJ)
 
 main.o: main.c
 	$(CC) -c $(FLAGS) main.c
