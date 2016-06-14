@@ -13,3 +13,6 @@ berechnung.o: berechnung.c
 
 grafik.o: grafik.c
 	$(CC) -c $(FLAGS) grafik.c
+
+clean:
+	-rm -f *.o
