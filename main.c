@@ -1,4 +1,9 @@
-#include "header.h"
+#include <stdio.h>
+
+/* Funktionsdeklaration */
+
+int berechnung(int wahl, float k[]);
+void grafik(void);
 
 int main(void){
 
