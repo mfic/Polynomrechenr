@@ -3,5 +3,5 @@
 
 /* Funktionsdeklaration */
 
-int berechnung(int wahl, int k[]);
+int berechnung(int wahl, float k[]);
 void grafik(void);
