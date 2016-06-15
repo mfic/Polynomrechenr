@@ -39,7 +39,7 @@ int berechnung(int wahl, double k[])
     datout = fopen("Definitionsbereich.dat", "w");
     // Sicherstellen, dass Datei geoeffnet worden ist.
     if (datout == NULL){
-        printf("Datei konnte nicht geöffnet werden.\n");
+        printf("Datei konnte nicht geoeffnet werden.\n");
     }
 
     x = von;
