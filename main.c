@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /* Funktionsdeklaration */
 
@@ -13,7 +14,7 @@ int main(void)
     int wahl = 0, i = 0;
     char buffer[100];
 
-    //system("clear");
+    system("clear");
     printf("Programm zur Polynomberechnung\n\n");
 
     do

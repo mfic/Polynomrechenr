@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int berechnung(int wahl, float k[]){
 
@@ -14,10 +15,10 @@ int berechnung(int wahl, float k[]){
     if (wahl == 2)
     {
 
-        printf("\nP(x) = %.2lfx^6 + %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx\n", k[6]/6, k[5]/5, k[4]/4, k[3]/3, k[2]/2, k[1], k[0]);
+        printf("\nP(x) = %.2lfx^6 + %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx\n", k[5]/5, k[4]/4, k[3]/3, k[2]/2, k[1], k[0]);
 
     } else {
-        printf("\np'(x) = %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[6]*5, k[5]*4, k[4]*3, k[3]*2, k[2], k[1]);
+        printf("\np'(x) = %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5]*4, k[4]*3, k[3]*2, k[2], k[1]);
            }
 
     printf("Bitte geben Sie den Definitionsbereich an links (von)\n");

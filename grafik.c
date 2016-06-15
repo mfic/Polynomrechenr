@@ -2,6 +2,9 @@
 
 void grafik(void){
 
+    /* Variablendeklaratiion */
+    int ausgabe=0;
+    
     do
     {
         printf("Möchen Sie die Ausgabe auf dem:\n");
