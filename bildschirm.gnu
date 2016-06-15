@@ -2,8 +2,11 @@
 set autoscale                          # scale axes automatically
 unset log                              # remove any log-scaling
 unset label                            # remove any previous labels
-set xtic auto                          # set xtics automatically
-set ytic auto                          # set ytics automatically
+unset key                              # removes any set keys
+unset xtics                            # unset xtics
+unset ytics                            # unset ytics
+set xtics auto                         # set xtics automatically
+set ytics auto                         # set ytics automatically
 set title "Ihr Polynom"
 set xlabel "x-Achse"
 set ylabel "y-Achse"
