@@ -9,14 +9,15 @@ void grafik(void){
 
     do
     {
+        // Menue ausgeben
         printf("Möchen Sie die Ausgabe auf dem:\n");
         printf("1. Bildschirm\n");
         printf("2. .ps-Datei\n");
-	
-	// Einlesen der Menueauswahl
-	fgets(buffer, 100, stdin);
-	sscanf(buffer, "%i", &ausgabe);	
-	
+
+       // Einlesen der Menueauswahl
+       fgets(buffer, 100, stdin);
+       sscanf(buffer, "%i", &ausgabe);
+
         switch(ausgabe)
         {
             case 1:

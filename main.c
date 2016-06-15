@@ -66,11 +66,11 @@ int main(void)
 
             case 4:
                 printf("Auf Wiedersehn!\n");
-            break;
+                break;
 
             default:
                 printf("Fehler: Bitte geben Sie eine Zahl zwischen 1 und 4 ein.\n\n");
-            break;
+                break;
         }
 
 

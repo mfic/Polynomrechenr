@@ -15,7 +15,6 @@ int berechnung(int wahl, double k[])
 
     if (wahl == 2)
     {
-
         printf("\nP(x) = %.2lfx^6 + %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx\n", k[5]/6, k[4]/5, k[3]/4, k[2]/3, k[1]/2, k[0]);
 
     } else {
@@ -24,17 +23,21 @@ int berechnung(int wahl, double k[])
 
     printf("Bitte geben Sie den Definitionsbereich an\n");
 
+    // Einlesen der linken Grenze
     printf("(von) links:  ");
     fgets(buffer, 100, stdin);
     sscanf(buffer, "%i", &von);
 
+    // Einlesen der rechten Grenze
     printf("(bis) rechts:  ");
     fgets(buffer, 100, stdin);
     sscanf(buffer, "%i", &bis);
 
     sw = (bis-von)/50.;
 
+    // Datei für Werte oeffnen
     datout = fopen("Definitionsbereich.dat", "w");
+    // Sicherstellen, dass Datei geoeffnet worden ist.
     if (datout == NULL){
         printf("Datei konnte nicht geöffnet werden.\n");
     }
@@ -42,19 +45,20 @@ int berechnung(int wahl, double k[])
     x = von;
     for(i = 0; i < 51; i++)
     {
+        // Berechnung des Polynoms an Stelle x
         pol = k[5]*pow(x,5) + k[4]*pow(x,4) + k[3]*pow(x,3) + k[2]*pow(x,2) + k[1]*x + k[0];
         if (wahl == 2)
         {
-           //Berechnung stm
+            //Berechnung stm an Stelle x
             stm = k[5]/6*pow(x,6) + k[4]/5*pow(x,5) + k[3]/4*pow(x,4) + k[2]/3*pow(x,3) + k[1]/2*pow(x,2) + k[0]*x;
-            //Eingabe Datei x, pol, stm
+            // Eingabe Datei x, pol, stm
             fprintf(datout, "%lf, %lf, %lf\n", x, pol, stm);
 
-         } else {
-            // Berechnung abl
+        } else {
+            // Berechnung abl an Stelle x
             abl = k[5]*5*pow(x,4) + k[4]*4*pow(x,3) + k[3]*3*pow(x,2) + k[2]*2*x + k[1];
             // Eingabe Datei x, pol, abl
-                fprintf(datout, "%lf, %lf, %lf\n", x, pol, abl);
+            fprintf(datout, "%lf, %lf, %lf\n", x, pol, abl);
                 }
         x += sw;
     }
