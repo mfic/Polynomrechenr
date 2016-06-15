@@ -5,7 +5,8 @@
 int berechnung(int wahl, float k[]);
 void grafik(void);
 
-int main(void){
+int main(void)
+{
 
     /* Variablendeklaration */
     float k[6] = {0};
@@ -15,7 +16,8 @@ int main(void){
     //system("clear");
     printf("Programm zur Polynomberechnung\n\n");
 
-    do{
+    do
+    {
         // Anzeige des Menues
         printf("1. Polynom-Koeffitienten eingeben\n");
         printf("2. Stammfunktionberechnen und anzeigen\n");
@@ -27,7 +29,8 @@ int main(void){
         fgets(buffer, 100, stdin);
         sscanf(buffer, "%i", &wahl);
 
-        switch(wahl){
+        switch(wahl)
+        {
             // Auswahl Menuepunkt 1
             case 1:
 
@@ -37,7 +40,8 @@ int main(void){
 
                 printf("\nBitte geben Sie die Koeffitienten nacheinander ein.\n");
                     // Schleife zur Eingabe der Koeffitienten
-                for(i = 5; i >= 0; i--){
+                for(i = 5; i >= 0; i--)
+                {
                     printf("Geben Sie den Koeffitienten vor x^%i ein\n", i);
                     fgets(buffer, 100, stdin);
                     sscanf(buffer, "%f", &k[i]);
@@ -62,11 +66,11 @@ int main(void){
 
             case 4:
                 printf("Auf Wiedersehn!\n");
-		break;
+            break;
 
             default:
                 printf("Fehler: Bitte geben Sie eine Zahl zwischen 1 und 4 ein.\n\n");
-		break;
+            break;
         }
 
 
