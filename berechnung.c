@@ -9,15 +9,16 @@ int berechnung(int wahl, float k[]){
     FILE *datout;
     char buffer[100];
 
- printf("\np(x) = %lfx^5 + %lfx^4 + %lfx^3 + %lfx^2 + %lfx + %lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
+    printf("\np(x) = %lfx^5 + %lfx^4 + %lfx^3 + %lfx^2 + %lfx + %lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
 
- if (wahl == 2){
+    if (wahl == 2)
+    {
 
-    printf("\nP(x) = k[5]/6x^6 + %lf/5x^5 + %lf/4x^4 + %lf/3x^3 + %lf/2x^2 + %lfx\n", k[5], k[4], k[3], k[2], k[1], k[0]);
+        printf("\nP(x) = "k[5]/6"x^6 + "k[4]/5"x^5 + "k[3]/4"x^4 + "k[2]/3"x^3 + "k[1]/2"x^2 + "k[0]"x\n");
 
- } else {
-     printf("\np'(x) = %lf*5x^4 + %lf*3x^3 + %lf*2x^2 + %lfx + %lf\n", k[5], k[4], k[3], k[2], k[1]);
-    }
+    } else {
+        printf("\np'(x) = "k[5]*5"x^4 + "k[4]*3"x^3 + "k[3]*2"x^2 + "k[2]"x + "k[1]"\n");
+           }
 
     printf("Bitte geben Sie den Definitionsbereich an links (von)\n");
 
@@ -36,11 +37,13 @@ int berechnung(int wahl, float k[]){
         printf("Datei konnte nicht geöffnet werden.\n");
     }
 
-    for(x = 0; x < 51; x += sw){
+    for(x = 0; x < 51; x += sw)
+    {
         pol = k[5]*pow(x,5) + k[4]*pow(x,4) + k[3]*pow(x,3) + k[2]*pow(x,2) + k[1]*x + k[0];
 
 
-        if (wahl == 2){
+        if (wahl == 2)
+        {
            //Berechnung stm
             stm = k[5]/6*pow(x,6) + k[4]/5*pow(x,5) + k[3]/4*pow(x,4) + k[2]/3*pow(x,3) + k[1]/2*pow(x,2) + k[0]*x;
             //Eingabe Datei x, pol, stm
@@ -51,7 +54,7 @@ int berechnung(int wahl, float k[]){
             abl = k[5]*5*pow(x,4) + k[4]*4*pow(x,3) + k[3]*3*pow(x,2) + k[2]*2*x + k[1];
             // Eingabe Datei x, pol, abl
                 fprintf(datout, "%lf, %lf, %lf\n", x, pol, abl);
-            }
+                }
     }
     fclose(datout);
 return 0;
