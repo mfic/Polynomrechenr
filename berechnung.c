@@ -34,7 +34,7 @@ int berechnung(int wahl, double k[])
 
     sw = (bis-von)/50;
 
-    datout = fopen("Defenitionsbereich.dat", "w");
+    datout = fopen("Definitionsbereich.dat", "w");
     if (datout == NULL){
         printf("Datei konnte nicht geöffnet werden.\n");
     }
