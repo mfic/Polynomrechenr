@@ -6,7 +6,7 @@ int berechnung(int wahl, double k[])
 {
 
     /* Variablendeklaration */
-    int von = 0, bis = 0;
+    int von = 0, bis = 0, i = 0;
     double sw = 0, x = 0, pol = 0, stm = 0, abl = 0;
     FILE *datout;
     char buffer[100];
@@ -39,7 +39,8 @@ int berechnung(int wahl, double k[])
         printf("Datei konnte nicht geöffnet werden.\n");
     }
 
-    for(x = 0; x < 51; x += sw)
+    x = von;
+    for(i = 0; i < 51; i++)
     {
         pol = k[5]*pow(x,5) + k[4]*pow(x,4) + k[3]*pow(x,3) + k[2]*pow(x,2) + k[1]*x + k[0];
 
@@ -57,6 +58,7 @@ int berechnung(int wahl, double k[])
             // Eingabe Datei x, pol, abl
                 fprintf(datout, "%lf, %lf, %lf\n", x, pol, abl);
                 }
+        x += sw;
     }
     fclose(datout);
 return 0;
