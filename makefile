@@ -15,4 +15,4 @@ grafik.o: grafik.c
 	$(CC) -c $(FLAGS) grafik.c
 
 clean:
-	-rm -f *.o
+	rm -f *.o polynomrechner
