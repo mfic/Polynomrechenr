@@ -4,7 +4,7 @@ void grafik(void){
 
     /* Variablendeklaratiion */
     int ausgabe=0;
-    
+
     do
     {
         printf("Möchen Sie die Ausgabe auf dem:\n");
@@ -24,5 +24,5 @@ void grafik(void){
                 printf("Fehler, bitte neue Eingabe.\n");
                 break;
         }
-    } while (ausgabe != 1 || ausgabe != 2);
+    } while(!(ausgabe == 1 || ausgabe == 2);
 }
