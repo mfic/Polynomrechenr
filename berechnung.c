@@ -9,15 +9,15 @@ int berechnung(int wahl, float k[]){
     FILE *datout;
     char buffer[100];
 
-    printf("\np(x) = %lfx^5 + %lfx^4 + %lfx^3 + %lfx^2 + %lfx + %lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
+    printf("\np(x) = %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
 
     if (wahl == 2)
     {
 
-        printf("\nP(x) = "k[5]/6"x^6 + "k[4]/5"x^5 + "k[3]/4"x^4 + "k[2]/3"x^3 + "k[1]/2"x^2 + "k[0]"x\n");
+        printf("\nP(x) = %.2lfx^6 + %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx\n", k[6]/6, k[5]/5, k[4]/4, k[3]/3, k[2]/2, k[1], k[0]);
 
     } else {
-        printf("\np'(x) = "k[5]*5"x^4 + "k[4]*3"x^3 + "k[3]*2"x^2 + "k[2]"x + "k[1]"\n");
+        printf("\np'(x) = %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[6]*5, k[5]*4, k[4]*3, k[3]*2, k[2], k[1]);
            }
 
     printf("Bitte geben Sie den Definitionsbereich an links (von)\n");
