@@ -10,9 +10,9 @@ void grafik(void){
     do
     {
         // Menue ausgeben
-        printf("Möchen Sie die Ausgabe auf dem:\n");
-        printf("1. Bildschirm\n");
-        printf("2. .ps-Datei\n");
+        printf("Möchen Sie die Ausgabe:\n");
+        printf("1. auf dem Bildschirm\n");
+        printf("2. in eine .ps-Datei\n");
 
        // Einlesen der Menueauswahl
        fgets(buffer, 100, stdin);
@@ -25,7 +25,7 @@ void grafik(void){
                 break;
             case 2:
                 system("gnuplot datei.gnu");
-                printf("Die Datei wurde unter grafik.ps gespeichert\n");
+                printf("\n\nDie Datei wurde unter grafik.ps gespeichert\n\n");
                 break;
             default:
                 printf("Fehler, bitte neue Eingabe.\n");

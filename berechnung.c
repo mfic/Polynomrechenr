@@ -11,14 +11,17 @@ int berechnung(int wahl, double k[])
     FILE *datout;
     char buffer[100];
 
-    printf("\np(x) = %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
+    printf("Ihr Polynom:\n");
+    printf("p(x) = %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
 
     if (wahl == 2)
     {
-        printf("\nP(x) = %.2lfx^6 + %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx\n", k[5]/6, k[4]/5, k[3]/4, k[2]/3, k[1]/2, k[0]);
+        printf("Die Stammfunktion des Polynoms:\n");
+        printf("P(x) = %.2lfx^6 + %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx\n", k[5]/6, k[4]/5, k[3]/4, k[2]/3, k[1]/2, k[0]);
 
     } else {
-        printf("\np'(x) = %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5]*5, k[4]*4, k[3]*3, k[2]*2, k[1]);
+        printf("Die Ableitung des Polynoms:\n");
+        printf("p'(x) = %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5]*5, k[4]*4, k[3]*3, k[2]*2, k[1]);
            }
 
     printf("Bitte geben Sie den Definitionsbereich an\n");
