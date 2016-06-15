@@ -32,7 +32,7 @@ int berechnung(int wahl, double k[])
     fgets(buffer, 100, stdin);
     sscanf(buffer, "%i", &bis);
 
-    sw = (bis-von)/50;
+    sw = (bis-von)/50.;
 
     datout = fopen("Definitionsbereich.dat", "w");
     if (datout == NULL){
@@ -43,8 +43,6 @@ int berechnung(int wahl, double k[])
     for(i = 0; i < 51; i++)
     {
         pol = k[5]*pow(x,5) + k[4]*pow(x,4) + k[3]*pow(x,3) + k[2]*pow(x,2) + k[1]*x + k[0];
-
-
         if (wahl == 2)
         {
            //Berechnung stm
