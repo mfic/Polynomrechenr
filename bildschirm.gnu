@@ -12,4 +12,4 @@ set xlabel "x-Achse"
 set ylabel "y-Achse"
 plot "Definitionsbereich.dat" using 1:2 title 'pol' with lines lt rgb "green", \
      "Definitionsbereich.dat" using 1:3 title 'stm/abl' with lines lt rgb "red"
-pause -1
+pause -1 "Druecke 'Enter' um fortzufahren"
