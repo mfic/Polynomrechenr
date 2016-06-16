@@ -16,4 +16,4 @@ grafik.o: grafik.c
 	$(CC) -c $(FLAGS1) grafik.c
 
 clean:
-	rm -f *.o polynomrechner
+	rm -f *.o polynomrechner Definitionsbereich.dat grafik.ps
