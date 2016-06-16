@@ -11,5 +11,5 @@ set title "Polynomausgabe"
 set xlabel "x-Achse"
 set ylabel "y-Achse"
 set output "grafik.ps"
-plot "Definitionsbereich.dat" using 1:2 title 'pol' with lines , \
-     "Definitionsbereich.dat" using 1:3 title 'stm/abl' with lines
+plot "Definitionsbereich.dat" using 1:2 title 'pol' with lines lt rgb "green", \
+     "Definitionsbereich.dat" using 1:3 title 'stm/abl' with lines lt rgb "red"
