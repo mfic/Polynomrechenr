@@ -7,9 +7,9 @@ unset ytics                            # unset ytics
 set xtics auto                         # set xtics automatically
 set ytics auto                         # set ytics automatically
 set terminal qt
-set title "Ihr Polynom"
+set title "Grafische Darstellung des Polynoms und seiner Ableitung bzw. Stammfunktion"
 set xlabel "x-Achse"
 set ylabel "y-Achse"
-plot "Definitionsbereich.dat" using 1:2 title 'pol' with lines lt rgb "green", \
-     "Definitionsbereich.dat" using 1:3 title 'stm/abl' with lines lt rgb "red"
+plot "Definitionsbereich.dat" using 1:2 title 'Polynom' with lines lt rgb "green", \
+     "Definitionsbereich.dat" using 1:3 title 'Berechnetes Polynom' with lines lt rgb "red"
 pause -1 "Druecke 'Enter' um fortzufahren"
