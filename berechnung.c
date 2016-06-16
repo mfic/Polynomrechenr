@@ -9,7 +9,7 @@ int berechnung(int wahl, double k[])
     int von = 0, bis = 0, i = 0;
     double sw = 0, x = 0, pol = 0, stm = 0, abl = 0;
     FILE *datout;
-    char buffer[100];
+    char buffer[100], j = 0;
 
     printf("Ihr Polynom:\n");
     printf("p(x) = %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);
@@ -26,15 +26,23 @@ int berechnung(int wahl, double k[])
 
     printf("Bitte geben Sie den Definitionsbereich an\n");
 
-    // Einlesen der linken Grenze
-    printf("(von) links:  ");
-    fgets(buffer, 100, stdin);
-    sscanf(buffer, "%i", &von);
+    do
+    {
+        // Einlesen der linken Grenze
+        printf("(von) links:  ");
+        fgets(buffer, 100, stdin);
+        sscanf(buffer, "%i", &von);
 
-    // Einlesen der rechten Grenze
-    printf("(bis) rechts:  ");
-    fgets(buffer, 100, stdin);
-    sscanf(buffer, "%i", &bis);
+        // Einlesen der rechten Grenze
+        printf("(bis) rechts:  ");
+        fgets(buffer, 100, stdin);
+        sscanf(buffer, "%i", &bis);
+
+        // Sicherstellen, dass die Eingegebenen Grenzen auch richtig sind
+        printf("\nSind die Grenzen\n(von) links: %i\n(bis) rechts: %i\nkorrekt?\n\nWenn ja bestaetige mit 'j': ", von, bis);
+        fgets(buffer, 100, stdin);
+        sscanf(buffer, "%c", &j);
+    } while (j != 'j');
 
     sw = (bis-von)/50.;
 
