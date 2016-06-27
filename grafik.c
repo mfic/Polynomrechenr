@@ -4,7 +4,7 @@
 void grafik (void){
 
     /* Variablendeklaratiion */
-    int ausgabe=0;
+    int ausgabe = 0;
     char buffer[100];
 
     do
