@@ -2,4 +2,4 @@
 mkdir -p ~/Hausaufgabe
 
 # Kopiere Quellcode und make
-cp -v *.c Makefile ~/Hausaufgabe
+cp -v *.c Makefile *.gnu ~/Hausaufgabe
