@@ -15,7 +15,10 @@ int main(void)
     char buffer[100];
 
     system("clear");
-    printf("Programm zur Polynomberechnung\n\n");
+    printf("##################################################\n");
+    printf("#Programm zur Polynomberechnung                  #\n");
+    printf("##################################################\n");
+
 
     do
     {
