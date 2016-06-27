@@ -1,5 +1,5 @@
 # Erstelle Hausaufgabenordner, wenn dieser nicht existiert
-mkdir -p ~/Hausaufgabe
+mkdir -p ~/Hausaufgaben/Aufgabe_04
 
 # Kopiere Quellcode und make
-cp -v *.c Makefile *.gnu ~/Hausaufgabe
+rsync -avv *.c Makefile *.gnu ~/Hausaufgaben/Aufgabe_04
