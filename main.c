@@ -51,6 +51,9 @@ int main (void)
                     sscanf (buffer, "%lf", &k[i]);
                 }
 
+                // Terminal-Ausgabe aufräumen
+                system ("clear");
+
                 // Anzeige des Polynoms
                 printf ("\np(x) = %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n\n", k[5], k[4], k[3], k[2], k[1], k[0]);
                 break;

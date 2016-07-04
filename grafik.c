@@ -20,13 +20,17 @@ void grafik (void){
 
         switch (ausgabe)
         {
+            // Ausgabe des Graphen auf dem Bildschirm
             case 1:
                 system ("gnuplot bildschirm.gnu");
                 break;
+            // Ausgabe des Graphen in einer Datei
             case 2:
                 system ("gnuplot datei.gnu");
+                system ("clear");
                 printf ("\n\nDie Datei wurde unter grafik.ps gespeichert\n\n");
                 break;
+            // Fehler
             default:
                 printf ("Fehler, bitte neue Eingabe.\n");
                 break;
