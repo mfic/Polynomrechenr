@@ -11,9 +11,6 @@ int berechnung (int wahl, double k[])
     FILE *datout;
     char buffer[100], j = 0;
 
-    // Aufräumen der Terminal-Anzeige
-    system ("clear");
-
     // Das Polynom und seine Stammfunktion bzw. Ableitung wird angezeigt
     printf ("Ihr Polynom:\n");
     printf ("p(x) = %.2lfx^5 + %.2lfx^4 + %.2lfx^3 + %.2lfx^2 + %.2lfx + %.2lf\n", k[5], k[4], k[3], k[2], k[1], k[0]);

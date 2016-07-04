@@ -27,7 +27,6 @@ void grafik (void){
             // Ausgabe des Graphen in einer Datei
             case 2:
                 system ("gnuplot datei.gnu");
-                system ("clear");
                 printf ("\n\nDie Datei wurde unter grafik.ps gespeichert\n\n");
                 break;
             // Fehler

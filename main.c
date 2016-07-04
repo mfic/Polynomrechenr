@@ -62,12 +62,14 @@ int main (void)
                 // Unterprogramm berechnung aufrufen
                 berechnung (wahl, k);
                 grafik ();
+                system("clear");
                 break;
 
             case 3:
                 // Unterprogramm berechnung aufrufen
                 berechnung (wahl, k);
                 grafik ();
+                system ("clear");
                 break;
 
             case 4:
